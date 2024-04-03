@@ -1,0 +1,24 @@
+MPD Now Playing Changelog
+=========================
+(C) 2010-2023 by Marcel Hasler
+
+Changelog from 0.5 to 0.5.1:
+* Updated CMake project files
+* Converted metadata to json format
+
+Changelog from 0.4 to 0.5:
+* Rewritten from scratch
+* Improved applet behavior
+
+Changelog from 0.3 to 0.4:
+* Ported to Plasma 5
+
+Changelog from 0.2 to 0.3:
+* Fixed losing connection when idle
+* Added Russian translations
+
+Changelog from 0.1 to 0.2:
+* Better support for remote connections
+* Added Password support
+* Various improvements and bug fixes
+* Added Brazilian translations

@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# zereal <zereal25@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-04 22:51+0100\n"
+"PO-Revision-Date: 2011-02-12 22:16+0500\n"
+"Last-Translator: zereal <zereal25@gmail.com>\n"
+"Language-Team: Elena Belova aka Zereal\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Virtaal 0.5.2\n"
+
+#: plasmoid/contents/ui/main.qml:83
+#, kde-format
+msgid "Now playing:"
+msgstr ""
+
+#: plasmoid/contents/ui/main.qml:86
+#, kde-format
+msgid "by"
+msgstr ""
+
+#: plasmoid/contents/ui/main.qml:93
+#, kde-format
+msgid "Not connected"
+msgstr ""
+
+#: plasmoid/contents/ui/main.qml:95
+#, kde-format
+msgid "No media playing"
+msgstr ""
+
+#: plasmoid/contents/ui/FullRepresentation.qml:54
+#, kde-format
+msgid "Artist:"
+msgstr "Исполнитель:"
+
+#: plasmoid/contents/ui/FullRepresentation.qml:57
+#, kde-format
+msgid "Title:"
+msgstr "Название:"
+
+#: plasmoid/contents/ui/FullRepresentation.qml:60
+#, kde-format
+msgid "Album:"
+msgstr "Альбом:"
+
+#: plasmoid/contents/ui/FullRepresentation.qml:63
+#, kde-format
+msgid "Time:"
+msgstr "Продолжительность:"
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:39
+#, kde-format
+msgid "Connection"
+msgstr "Связь"
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:48
+#, kde-format
+msgid "Use default"
+msgstr "По умолчанию"
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:52
+#, fuzzy, kde-format
+msgid "Host:"
+msgstr "Хост:"
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:59
+#, kde-format
+msgid "Port:"
+msgstr "Порт:"
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:68
+#, kde-format
+msgid "Password:"
+msgstr ""
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:77
+#, kde-format
+msgid "Notifications"
+msgstr ""
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:86
+#, kde-format
+msgid "Enable notifications on song change"
+msgstr ""
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:90
+#, kde-format
+msgid "Duration:"
+msgstr ""
+
+#: plasmoid/contents/ui/ConfigGeneral.qml:96
+#, kde-format
+msgid "seconds"
+msgstr ""
+
+#: plasmoid/contents/config/config.qml:28
+#, kde-format
+msgid "General"
+msgstr ""
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Elena Belova aka Zereal"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "zereal25@gmail.com"

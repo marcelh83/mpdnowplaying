@@ -1,0 +1,27 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "mahasler@gmail.com",
+                "Name": "Marcel Hasler"
+            }
+        ],
+        "Category": "Multimedia",
+        "Description": "Display what Music Player Daemon is currently playing",
+        "Description[de]": "Anzeigen was der Music Player Daemon gerade abspielt",
+        "Icon": "applications-multimedia",
+        "Id": "org.kde.plasma.mpdnowplaying",
+        "License": "GPLv3",
+        "Name": "MPD Now Playing",
+        "Name[de]": "MPD Musiktitel-Anzeige",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.5.1",
+        "Website": "https://mpdnowplaying.sourceforge.io"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "ApplicationStatus"
+}
