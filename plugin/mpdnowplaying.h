@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *

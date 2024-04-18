@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *
@@ -20,12 +20,12 @@
  *                                                                          *
  ****************************************************************************/
 
-import QtQuick 2.0
-import QtQuick.Layouts 1.0
+import QtQuick
+import QtQuick.Layouts
 
-import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.kirigami as Kirigami
 
-PlasmaCore.IconItem {
+Kirigami.Icon {
     Layout.fillWidth: true
     Layout.fillHeight: true
 

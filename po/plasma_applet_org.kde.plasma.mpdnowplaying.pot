@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-04 22:51+0100\n"
+"POT-Creation-Date: 2024-04-11 23:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: plasmoid/contents/config/config.qml:28
+#, kde-format
+msgid "General"
+msgstr ""
 
 #: plasmoid/contents/ui/main.qml:83
 #, kde-format
@@ -37,72 +42,67 @@ msgstr ""
 msgid "No media playing"
 msgstr ""
 
-#: plasmoid/contents/ui/FullRepresentation.qml:54
-#, kde-format
-msgid "Artist:"
-msgstr ""
-
-#: plasmoid/contents/ui/FullRepresentation.qml:57
-#, kde-format
-msgid "Title:"
-msgstr ""
-
-#: plasmoid/contents/ui/FullRepresentation.qml:60
-#, kde-format
-msgid "Album:"
-msgstr ""
-
-#: plasmoid/contents/ui/FullRepresentation.qml:63
-#, kde-format
-msgid "Time:"
-msgstr ""
-
-#: plasmoid/contents/ui/ConfigGeneral.qml:39
+#: plasmoid/contents/ui/ConfigGeneral.qml:45
 #, kde-format
 msgid "Connection"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:48
+#: plasmoid/contents/ui/ConfigGeneral.qml:54
 #, kde-format
 msgid "Use default"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:52
+#: plasmoid/contents/ui/ConfigGeneral.qml:58
 #, kde-format
 msgid "Host:"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:59
+#: plasmoid/contents/ui/ConfigGeneral.qml:66
 #, kde-format
 msgid "Port:"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:68
+#: plasmoid/contents/ui/ConfigGeneral.qml:79
 #, kde-format
 msgid "Password:"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:77
+#: plasmoid/contents/ui/ConfigGeneral.qml:89
 #, kde-format
 msgid "Notifications"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:86
+#: plasmoid/contents/ui/ConfigGeneral.qml:98
 #, kde-format
 msgid "Enable notifications on song change"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:90
+#: plasmoid/contents/ui/ConfigGeneral.qml:102
 #, kde-format
 msgid "Duration:"
 msgstr ""
 
-#: plasmoid/contents/ui/ConfigGeneral.qml:96
+#: plasmoid/contents/ui/ConfigGeneral.qml:110
 #, kde-format
 msgid "seconds"
 msgstr ""
 
-#: plasmoid/contents/config/config.qml:28
+#: plasmoid/contents/ui/FullRepresentation.qml:58
 #, kde-format
-msgid "General"
+msgid "Artist:"
+msgstr ""
+
+#: plasmoid/contents/ui/FullRepresentation.qml:61
+#, kde-format
+msgid "Title:"
+msgstr ""
+
+#: plasmoid/contents/ui/FullRepresentation.qml:64
+#, kde-format
+msgid "Album:"
+msgstr ""
+
+#: plasmoid/contents/ui/FullRepresentation.qml:67
+#, kde-format
+msgid "Time:"
 msgstr ""

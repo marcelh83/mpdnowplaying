@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *
@@ -20,8 +20,8 @@
  *                                                                          *
  ****************************************************************************/
 
-import QtQuick 2.0
-import org.kde.plasma.configuration 2.0
+import QtQuick
+import org.kde.plasma.configuration
 
 ConfigModel {
     ConfigCategory {

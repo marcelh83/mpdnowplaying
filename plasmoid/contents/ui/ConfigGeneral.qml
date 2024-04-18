@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *
@@ -20,11 +20,11 @@
  *                                                                          *
  ****************************************************************************/
 
-import QtQuick 2.4
-import QtQuick.Controls 1.0
-import QtQuick.Layouts 1.0
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami as Kirigami
 
 Kirigami.FormLayout {
     property alias cfg_defaults: defaults.checked
@@ -67,8 +67,12 @@ Kirigami.FormLayout {
 
         id: port
         enabled: !defaults.checked
-        minimumValue: 1
-        maximumValue: 65535
+        from: 1
+        to: 65535
+
+        textFromValue: function(value) {
+            return value;
+        }
     }
 
     TextField {
@@ -99,8 +103,11 @@ Kirigami.FormLayout {
 
         id: timeout
         enabled: notify.checked
-        minimumValue: 1
-        maximumValue: 99
-        suffix: " " + i18n("seconds")
+        from: 1
+        to: 99
+
+        textFromValue: function(value) {
+            return value + " " + i18n("seconds")
+        }
     }
 }

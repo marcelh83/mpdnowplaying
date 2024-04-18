@@ -2,7 +2,7 @@
 #                                                                           #
 #   This file is part of MPD Now Playing.                                   #
 #                                                                           #
-#   Copyright (C) 2010 - 2023                                               #
+#   Copyright (C) 2010 - 2024                                               #
 #   Marcel Hasler <mahasler@gmail.com>                                      #
 #                                                                           #
 #   This program is free software; you can redistribute it and/or modify    #
@@ -30,22 +30,22 @@ set(mpdnowplayingplugin_SRCS
     mpdworker.h
 )
 
-qt5_wrap_cpp(mpdnowplayingplugin_MOCS mpdstate.h)
+qt6_wrap_cpp(mpdnowplayingplugin_MOCS mpdstate.h)
 
 set(mpdnowplayingplugin_LIBS
     mpdclient
-    Qt5::Core
-    Qt5::Quick
-    KF5::ConfigCore
-    KF5::CoreAddons
-    KF5::I18n
-    KF5::Notifications
+    Qt6::Core
+    Qt6::Quick
+    KF6::ConfigCore
+    KF6::CoreAddons
+    KF6::I18n
+    KF6::Notifications
 )
 
 add_library(mpdnowplayingplugin SHARED ${mpdnowplayingplugin_SRCS} ${mpdnowplayingplugin_MOCS})
 target_link_libraries(mpdnowplayingplugin ${mpdnowplayingplugin_LIBS})
 
-set(mpdnowplayingplugin_DEST ${QML_INSTALL_DIR}/org/kde/plasma/private/mpdnowplaying)
+set(mpdnowplayingplugin_DEST ${KDE_INSTALL_QMLDIR}/org/kde/plasma/private/mpdnowplaying)
 
 install(TARGETS mpdnowplayingplugin DESTINATION ${mpdnowplayingplugin_DEST})
 install(FILES qmldir DESTINATION ${mpdnowplayingplugin_DEST})

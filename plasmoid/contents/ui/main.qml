@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *
@@ -20,17 +20,20 @@
  *                                                                          *
  ****************************************************************************/
 
-import QtQuick 2.0
+import QtQuick
 
-import org.kde.plasma.plasmoid 2.0
-import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.private.mpdnowplaying 1.0
+import org.kde.plasma.core as PlasmaCore
+import org.kde.plasma.plasma5support as Plasma5Support
+import org.kde.plasma.plasmoid
 
-Item {
+import org.kde.plasma.private.mpdnowplaying
+
+PlasmoidItem {
     id: main
 
-    property var baseSize: theme.mSize(theme.defaultFont).height
+    property var baseSize: Kirigami.Units.gridUnit
 
     property var defaultWidth: 14 * baseSize
     property var defaultHeight: 9 * baseSize
@@ -38,14 +41,14 @@ Item {
     width: defaultWidth
     height: defaultHeight
 
-    Plasmoid.switchWidth: 0.7 * defaultWidth
-    Plasmoid.switchHeight: 0.7 * defaultHeight
+    switchWidth: 0.7 * defaultWidth
+    switchHeight: 0.7 * defaultHeight
 
-    Plasmoid.compactRepresentation: CompactRepresentation {}
-    Plasmoid.fullRepresentation: FullRepresentation {}
-    Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
+    compactRepresentation: CompactRepresentation {}
+    fullRepresentation: FullRepresentation {}
+    preferredRepresentation: fullRepresentation
 
-    Plasmoid.toolTipTextFormat: Text.RichText
+    toolTipTextFormat: Text.RichText
 
     property var active: mpd.state == MpdState.Play || mpd.state == MpdState.Pause
     Plasmoid.status: active ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.PassiveStatus
@@ -66,7 +69,7 @@ Item {
         }
     }
 
-    PlasmaCore.DataSource {
+    Plasma5Support.DataSource {
         id: notificationSource
         engine: "notifications"
     }
@@ -77,19 +80,19 @@ Item {
 
         if (state == MpdState.Play || state == MpdState.Pause)
         {
-            Plasmoid.toolTipMainText = i18n("Now playing:")
+            toolTipMainText = i18n("Now playing:")
 
             var format = "<b>%1</b> %2 <b>%3</b>"
-            Plasmoid.toolTipSubText = format.arg(mpd.title).arg(i18n("by")).arg(mpd.artist)
+            toolTipSubText = format.arg(mpd.title).arg(i18n("by")).arg(mpd.artist)
         }
         else
         {
-            Plasmoid.toolTipMainText = Plasmoid.title
+            toolTipMainText = Plasmoid.title
 
             if (state == MpdState.Unknown)
-                Plasmoid.toolTipSubText = i18n("Not connected")
+                toolTipSubText = i18n("Not connected")
             else
-                Plasmoid.toolTipSubText = i18n("No media playing")
+                toolTipSubText = i18n("No media playing")
         }
     }
 
@@ -102,8 +105,8 @@ Item {
 
             operation["appName"] = Plasmoid.title
             operation["appIcon"] = Plasmoid.icon
-            operation["summary"] = Plasmoid.toolTipMainText
-            operation["body"]    = Plasmoid.toolTipSubText
+            operation["summary"] = toolTipMainText
+            operation["body"]    = toolTipSubText
             operation["timeout"] = plasmoid.configuration.timeout * 1000
 
             service.startOperationCall(operation);

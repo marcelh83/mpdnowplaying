@@ -2,7 +2,7 @@
 #                                                                           #
 #   This file is part of MPD Now Playing.                                   #
 #                                                                           #
-#   Copyright (C) 2010 - 2023                                               #
+#   Copyright (C) 2010 - 2024                                               #
 #   Marcel Hasler <mahasler@gmail.com>                                      #
 #                                                                           #
 #   This program is free software; you can redistribute it and/or modify    #
@@ -26,17 +26,20 @@ project(MPDNowPlaying)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(BUILD_WITH_QT6 ON)
+
 find_package(ECM REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDECompilerSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
 
-find_package(KF5 REQUIRED COMPONENTS Config CoreAddons I18n Notifications Plasma)
-find_package(Qt5 REQUIRED COMPONENTS Core Quick)
+find_package(Qt6 REQUIRED NO_MODULE COMPONENTS Core Quick)
+find_package(KF6 REQUIRED COMPONENTS Config CoreAddons I18n Notifications)
+find_package(Plasma REQUIRED)
 
 add_subdirectory(plugin)
-add_subdirectory(po)
 
 plasma_install_package(plasmoid org.kde.plasma.mpdnowplaying)
+ki18n_install(po)

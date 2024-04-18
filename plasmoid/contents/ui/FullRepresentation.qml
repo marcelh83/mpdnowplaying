@@ -2,7 +2,7 @@
  *                                                                          *
  *   This file is part of MPD Now Playing.                                  *
  *                                                                          *
- *   Copyright (C) 2010 - 2023                                              *
+ *   Copyright (C) 2010 - 2024                                              *
  *   Marcel Hasler <mahasler@gmail.com>                                     *
  *                                                                          *
  *   This program is free software; you can redistribute it and/or modify   *
@@ -20,14 +20,17 @@
  *                                                                          *
  ****************************************************************************/
 
-import QtQuick 2.0
-import QtQuick.Layouts 1.0
+import QtQuick
+import QtQuick.Layouts
 
-import org.kde.plasma.components 3.0 as PlasmaComponents
-import org.kde.plasma.private.mpdnowplaying 1.0
+import org.kde.kirigami as Kirigami
+
+import org.kde.plasma.components as PlasmaComponents
+
+import org.kde.plasma.private.mpdnowplaying
 
 ColumnLayout {
-    property var baseSize: theme.mSize(theme.defaultFont).height
+    property var baseSize: Kirigami.Units.gridUnit
 
     Component.onCompleted: mpd.reconnect()
     enabled: mpd.state != MpdState.Unknown
