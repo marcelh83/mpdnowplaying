@@ -11,9 +11,9 @@ Make sure you have libmpdclient installed (including development files).
 Clone the repo or extract the downloaded archive, change to the extracted folder and type
 
     mkdir build && cd build
-    cmake -DCMAKE_INSTALL_PREFIX=`kf5-config --prefix` ..
+    cmake -DCMAKE_INSTALL_PREFIX=`qtpaths --install-prefix` ..
     make
-    make install (as root)
+    sudo make install
 
 Feedback and translations are welcome.
 
